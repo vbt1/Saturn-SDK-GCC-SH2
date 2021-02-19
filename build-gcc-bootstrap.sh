@@ -15,11 +15,13 @@ export CDIR=$PWD
 #`realpath --relative-to=./ ${SRCDIR}/gcc-${GCCVER}`/configure \
 #./configure \
 ../../source/gcc-${GCCVER}/configure \
-	--build=$BUILDMACH --host=$HOSTMACH --target=$TARGETMACH \
+	--build=$BUILDMACH --host=$HOSTMACH --target=$TARGETMACH --with-cpu=m2 \
 	--prefix=$INSTALLDIR --without-headers --enable-bootstrap \
-	--enable-languages=c,c++,lto --disable-threads --disable-libmudflap \
+	--enable-languages=c,c++,lto --disable-threads  --enable-static --disable-libmudflap \
 	--with-gnu-ld --with-gnu-as --with-gcc --enable-libssp --disable-libgomp \
-	--disable-nls --disable-shared --program-prefix=${PROGRAM_PREFIX} \
+	--disable-nls --disable-tls --disable-shared --program-prefix=${PROGRAM_PREFIX} \
+	--disable-libmpx --disable-libatomic --disable-libquadmath \
+	--disable-libvtv --disable-libsanitizer --disable-coverage --disable-decimal-float \
 	--with-newlib --disable-multilib --disable-libgcj \
 	--without-included-gettext --disable-libstdcxx --enable-lto \
 	${GCC_BOOTSTRAP_FLAGS}
