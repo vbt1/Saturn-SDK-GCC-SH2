@@ -15,7 +15,7 @@ export PROGRAM_PREFIX=sh-elf-
 
 export BINUTILSVER=2.36.1
 export BINUTILSREV=
-export GCCVER=10.2.0
+export GCCVER=10.3.0
 export GCCREV=
 export NEWLIBVER=4.1.0
 export NEWLIBREV=
