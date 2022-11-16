@@ -13,9 +13,9 @@ export ROOTDIR=$PWD/toolchain
 export DOWNLOADDIR=$PWD/toolchain/download
 export PROGRAM_PREFIX=sh-elf-
 
-export BINUTILSVER=2.37
+export BINUTILSVER=2.39
 export BINUTILSREV=
-export GCCVER=11.2.0
+export GCCVER=12.2.0
 export GCCREV=
 export NEWLIBVER=4.1.0
 export NEWLIBREV=
@@ -25,8 +25,6 @@ export MPFRVER=4.1.0
 export MPFRREV=
 export GMPVER=6.2.1
 export GMPREV=
-export GLIBCVER=2.33
-export GLIBCREV=
 
 export OBJFORMAT=ELF
 
